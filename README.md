@@ -66,6 +66,15 @@ pip install -U label-studio
 # Launch it!
 label-studio
 
+If you see error you can try this: 
+
+```bash
+.venv\Scripts\activate
+pip install --upgrade pip setuptools wheel
+pip install label-studio --prefer-binary
+```
+
+
 Then open your browser at:
 👉 http://localhost:8080
 
