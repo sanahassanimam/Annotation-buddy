@@ -55,7 +55,7 @@ python pdf_to_txt.py input_paper.pdf output_paper.txt
 Use the Python script to convert Label Studio’s exported JSON into a structured Excel or CSV file.
 
 ```bash
-python labelstudio_json_to_csv_transposed_simple.py project-annotations.json
+python json_to_csv_converter.py project-annotations.json
 ```
 
 ✅ **Output files**
