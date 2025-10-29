@@ -1,0 +1,11 @@
+<View>
+  <Text name="text" value="$text"/>
+  <Labels name="label" toName="text">
+    <Label value="Software" background="lightblue"/>
+    <Label value="Algorithm/Type" background="lightgreen"/>
+    <Label value="Parameters" background="lightyellow"/>
+    <Label value="Filtering" background="lightpink"/>
+    <Label value="Atlas definition" background="orange"/>
+    <Label value="ROI definition" background="violet"/>
+  </Labels>
+</View>
