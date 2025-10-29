@@ -20,9 +20,36 @@ pip install -r requirements.txt
 
 ## 🚀 Usage
 
-### **Step 1 — Convert PDF → TXT**
+### **Step 1 — Convert PDFs → TXTs (Batch Conversion)**
 
-Convert your input paper into a plain text file.
+You can convert a **folder of PDF research papers** into individual text files automatically.  
+Each converted `.txt` file will be saved in a new folder named `txt_files`.
+
+Example usage:
+
+```bash
+python pdf_to_txt_batch.py input_folder/ output_folder/txt_files/
+```
+
+✅ **Explanation:**
+- `input_folder/` → the folder containing your PDF papers  
+- `output_folder/txt_files/` → new folder where all converted `.txt` files will be saved  
+- The script automatically processes each PDF and saves a matching `.txt` version.
+
+Example result:
+```
+papers/
+├── Paper1.pdf
+├── Paper2.pdf
+└── Paper3.pdf
+
+txt_files/
+├── Paper1.txt
+├── Paper2.txt
+└── Paper3.txt
+```
+
+If you want to convert a single paper manually, you can still use:
 
 ```bash
 python pdf_to_txt.py input_paper.pdf output_paper.txt
@@ -38,11 +65,8 @@ python pdf_to_txt.py input_paper.pdf output_paper.txt
    ```
    label_definitions/label_schema.xml
    ```
-4. Import your converted text file:
-   ```
-   output_paper.txt
-   ```
-5. Annotate the relevant spans (e.g., *SPM12*, *6 mm FWHM*, *AAL atlas*)
+4. Import one of your converted `.txt` files from `txt_files/`
+5. Annotate relevant spans (e.g., *SPM12*, *6 mm FWHM*, *AAL atlas*)
 6. Export annotations as JSON:
    ```
    project-annotations.json
@@ -55,7 +79,7 @@ python pdf_to_txt.py input_paper.pdf output_paper.txt
 Use the Python script to convert Label Studio’s exported JSON into a structured Excel or CSV file.
 
 ```bash
-python json_to_csv_converter.py project-annotations.json
+python labelstudio_json_to_csv_transposed_simple.py project-annotations.json
 ```
 
 ✅ **Output files**
@@ -88,6 +112,7 @@ python aggregate_csvs.py "exports/*_structured.csv" final_dataset.xlsx
 ```bash
 Annotation-buddy/
 ├── pdf_to_txt.py
+├── pdf_to_txt_batch.py
 ├── labelstudio_json_to_csv_transposed_simple.py
 ├── aggregate_csvs.py
 ├── requirements.txt
@@ -137,6 +162,7 @@ See [`LICENSE`](LICENSE) for details.
 
 | Task | File/Place | Purpose |
 |------|-------------|----------|
+| Convert PDFs → TXTs | `pdf_to_txt_batch.py` | Batch conversion of papers to text |
 | Write workflow, usage, and commands | `README.md` | Main documentation (shown on repo page) |
 | Specify ignored files | `.gitignore` | Avoid pushing temp/data files |
 | Define license terms | `LICENSE` | Explains how others can reuse your code |
