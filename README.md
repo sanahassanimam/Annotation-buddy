@@ -60,6 +60,16 @@ python pdf_to_txt.py input_paper.pdf output_paper.txt
 ### **Step 2 — Annotate in Label Studio**
 
 1. Open [Label Studio](https://labelstud.io/)
+# Install the package
+# into python virtual environment
+pip install -U label-studio
+# Launch it!
+label-studio
+
+Then open your browser at:
+👉 http://localhost:8080
+
+
 2. Create a new project  
 3. Paste the XML schema from:
    ```
