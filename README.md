@@ -24,13 +24,23 @@ pip install -r requirements.txt
 
 You can now convert PDF research papers into JSON files that Label Studio/Human Signals accepts as one full text block per paper.
 
-Convert a folder of PDFs → JSON
+
+**Convert a single PDF → JSON**
+
+If you want to convert a single paper manually, you can still use:
+
+```bash
+python pdf_to_json.py input_paper.pdf output_paper.json
+```
+
+**Convert a folder of PDFs → JSON**
 
 Example usage:
 
 ```bash
 python pdf_to_json_batch.py input_folder/ json_files/
 ```
+All converted .json files will be saved in json_files/ (automatically created if missing).
 
 ✅ **Explanation:**
 - `input_folder/` → the folder containing your PDF papers  
@@ -50,11 +60,6 @@ json_files/
 └── Paper3.json
 ```
 
-If you want to convert a single paper manually, you can still use:
-
-```bash
-python pdf_to_json.py input_paper.pdf output_paper.json
-```
 Each JSON file will look like:
 
 
