@@ -29,12 +29,12 @@ Convert a folder of PDFs → JSON
 Example usage:
 
 ```bash
-python pdf_to_json_batch.py input_folder/ output_folder/json_files/
+python pdf_to_json_batch.py input_folder/ json_files/
 ```
 
 ✅ **Explanation:**
 - `input_folder/` → the folder containing your PDF papers  
-- `output_folder/json_files/` → new folder where all converted `.json` files will be saved  
+- `json_files/` → new folder where all converted `.json` files will be saved  
 - The script automatically processes each PDF and saves a matching `.json` version.
 
 Example result:
@@ -44,7 +44,7 @@ papers/
 ├── Paper2.pdf
 └── Paper3.pdf
 
-txt_files/
+json_files/
 ├── Paper1.json
 ├── Paper2.json
 └── Paper3.json
@@ -63,7 +63,7 @@ Each JSON file will look like:
   "text": "Full PDF text extracted here..."
 }
 ```
-Perfect for HumanSignal/Label Studio.
+The json file is perfect for importing in HumanSignal/Label Studio.
 ---
 
 ### **Step 2 — Annotate in Label Studio**
