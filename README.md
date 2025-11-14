@@ -20,7 +20,7 @@ pip install -r requirements.txt
 
 ## 🚀 Usage
 
-### **Step 1 — Step 1 — Convert PDFs → JSON (Batch or Single File)
+### **Step 1 — Convert PDFs → JSON (Batch or Single File)
 
 You can now convert PDF research papers into JSON files that Label Studio/Human Signals accepts as one full text block per paper.
 
