@@ -40,7 +40,6 @@ Example usage:
 ```bash
 python pdf_to_json_batch.py input_folder/ json_files/
 ```
-All converted .json files will be saved in json_files/ (automatically created if missing).
 
 ✅ **Explanation:**
 - `input_folder/` → the folder containing your PDF papers  
@@ -59,6 +58,9 @@ json_files/
 ├── Paper2.json
 └── Paper3.json
 ```
+
+All converted .json files will be saved in json_files/ (automatically created if missing).
+
 
 Each JSON file will look like:
 
