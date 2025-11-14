@@ -74,9 +74,9 @@ The json file is perfect for importing in HumanSignal/Label Studio.
 ### **Step 2 — Annotate in Label Studio**
 
 1. Open [Label Studio](https://labelstud.io/)
-# Install the package into python virtual environment
+Install the package into python virtual environment
 pip install -U label-studio
-# Launch it!
+Launch it!
 label-studio
 
 If you see error you can try this: 
