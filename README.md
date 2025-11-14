@@ -20,21 +20,22 @@ pip install -r requirements.txt
 
 ## 🚀 Usage
 
-### **Step 1 — Convert PDFs → TXTs (Batch Conversion)**
+### **Step 1 — Step 1 — Convert PDFs → JSON (Batch or Single File)
 
-You can convert a **folder of PDF research papers** into individual text files automatically.  
-Each converted `.txt` file will be saved in a new folder named `txt_files`.
+You can now convert PDF research papers into JSON files that Label Studio/Human Signals accepts as one full text block per paper.
+
+Convert a folder of PDFs → JSON
 
 Example usage:
 
 ```bash
-python pdf_to_txt_batch.py input_folder/ output_folder/txt_files/
+python pdf_to_json_batch.py input_folder/ output_folder/json_files/
 ```
 
 ✅ **Explanation:**
 - `input_folder/` → the folder containing your PDF papers  
-- `output_folder/txt_files/` → new folder where all converted `.txt` files will be saved  
-- The script automatically processes each PDF and saves a matching `.txt` version.
+- `output_folder/json_files/` → new folder where all converted `.json` files will be saved  
+- The script automatically processes each PDF and saves a matching `.json` version.
 
 Example result:
 ```
@@ -44,17 +45,25 @@ papers/
 └── Paper3.pdf
 
 txt_files/
-├── Paper1.txt
-├── Paper2.txt
-└── Paper3.txt
+├── Paper1.json
+├── Paper2.json
+└── Paper3.json
 ```
 
 If you want to convert a single paper manually, you can still use:
 
 ```bash
-python pdf_to_txt.py input_paper.pdf output_paper.txt
+python pdf_to_json.py input_paper.pdf output_paper.json
 ```
+Each JSON file will look like:
 
+
+```bash
+{
+  "text": "Full PDF text extracted here..."
+}
+```
+Perfect for HumanSignal/Label Studio.
 ---
 
 ### **Step 2 — Annotate in Label Studio**
