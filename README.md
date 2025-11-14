@@ -117,7 +117,7 @@ Then open your browser at:
 Use the Python script to convert Label Studio’s exported JSON into a structured Excel or CSV file.
 
 ```bash
-python labelstudio_json_to_csv_transposed_simple.py project-annotations.json
+python json_to_csv_converter.py project-annotations.json
 ```
 
 ✅ **Output files**
@@ -149,9 +149,9 @@ python aggregate_csvs.py "exports/*_structured.csv" final_dataset.xlsx
 
 ```bash
 Annotation-buddy/
-├── pdf_to_txt.py
-├── pdf_to_txt_batch.py
-├── labelstudio_json_to_csv_transposed_simple.py
+├── pdf_to_json.py
+├── pdf_to_json_batch.py
+├── json_to_csv_converter.py
 ├── aggregate_csvs.py
 ├── requirements.txt
 ├── .gitignore
@@ -200,7 +200,7 @@ See [`LICENSE`](LICENSE) for details.
 
 | Task | File/Place | Purpose |
 |------|-------------|----------|
-| Convert PDFs → TXTs | `pdf_to_txt_batch.py` | Batch conversion of papers to text |
+| Convert PDFs → JSON | `pdf_to_json_batch.py` | Batch conversion of papers to json |
 | Write workflow, usage, and commands | `README.md` | Main documentation (shown on repo page) |
 | Specify ignored files | `.gitignore` | Avoid pushing temp/data files |
 | Define license terms | `LICENSE` | Explains how others can reuse your code |
