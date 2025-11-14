@@ -44,7 +44,7 @@ python pdf_to_json_batch.py input_folder/ json_files/
 ✅ **Explanation:**
 - `input_folder/` → the folder containing your PDF papers  
 - `json_files/` → new folder where all converted `.json` files will be saved  
-- The script automatically processes each PDF and saves a matching `.json` version.
+- The script automatically processes each PDF and produce a folder json_files. Inside the folder the script genertaes and saves a matching `.json` version for each paper in the input folder.
 
 Example result:
 ```
