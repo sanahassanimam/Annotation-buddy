@@ -61,15 +61,14 @@ json_files/
 
 All converted .json files will be saved in json_files/ (automatically created if missing).
 
-
 Each JSON file will look like:
-
 
 ```bash
 {
   "text": "Full PDF text extracted here..."
 }
 ```
+
 The json file is perfect for importing in HumanSignal/Label Studio.
 ---
 
