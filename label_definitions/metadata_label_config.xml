@@ -1,0 +1,23 @@
+<View>
+
+  <View style="padding: 10px; border: 1px solid #ccc; margin-bottom: 1em; border-radius: 5px;">
+    <Header value="Metadata Information"/>
+
+    <TextArea name="first_author" toName="text" label="First Author" required="false" rows="1" placeholder="Enter first author"/>
+    <TextArea name="title" toName="text" label="Paper Title" required="false" rows="1" placeholder="Enter paper title"/>
+    <TextArea name="author" toName="text" label="All Authors" required="false" rows="1" placeholder="Enter author list"/>
+    <TextArea name="doi" toName="text" label="DOI" required="false" rows="1" placeholder="Enter DOI"/>
+  </View>
+
+  <Text name="text" value="$text"/>
+
+  <Labels name="label" toName="text">
+    <Label value="Software" background="lightblue"/>
+    <Label value="Algorithm/Type" background="lightgreen"/>
+    <Label value="Parameters" background="lightyellow"/>
+    <Label value="Filtering" background="lightpink"/>
+    <Label value="Atlas definition" background="orange"/>
+    <Label value="ROI definition" background="violet"/>
+  </Labels>
+
+</View>
