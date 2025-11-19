@@ -1,0 +1,14 @@
+<View>
+  <Text name="text" value="$text"/>
+  <View style="box-shadow: 2px 2px 5px #999;
+               padding: 20px; margin-top: 2em;
+               border-radius: 5px;">
+    <Header value="Screening decision (map to: 1 = Exclude; 2 = Include — no psychometrics; 3 = Include — with psychometrics)"/>
+    <Choices name="inclusion_status" toName="text"
+             choice="single" showInLine="false">
+      <Choice value="1 = Exclude"/>
+      <Choice value="2 = Include — no psychometrics reported"/>
+      <Choice value="3 = Include — with psychometrics reported"/>
+    </Choices>
+  </View>
+</View>
