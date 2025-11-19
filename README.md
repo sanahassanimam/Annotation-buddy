@@ -177,6 +177,25 @@ pdfminer.six
 
 ---
 
+📘 Google Colab Notebook
+
+You can run the full Annotation Buddy workflow directly in Google Colab:
+
+👉 Open the Colab Notebook
+https://colab.research.google.com/drive/14fcGrI97WJAfnv_EEYbFBAAnMcAbVoVn#scrollTo=e36pHFsJJEK0
+
+This notebook provides:
+
+PDF → JSON conversion
+
+Batch processing utilities
+
+Annotation preparation scripts
+
+Data cleaning and formatting tools
+
+Use it if you prefer cloud execution or do not want to set up the environment locally.
+
 ## 👩‍💻 Author
 
 **Sana Hassan Imam**  
